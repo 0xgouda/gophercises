@@ -1,0 +1,13 @@
+<h1>{{.Title}}</h1>
+
+{{range .Story}}
+    {{.}}
+{{end}}
+
+<ul>
+    {{range .Options}}
+        <li>{{.Text}}</li>
+        <li><a href="/{{.Name}}">{{.Name}}</a></li> 
+        <br>
+    {{end}}
+</ul>
